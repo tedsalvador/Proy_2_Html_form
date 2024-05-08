@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <title>HTML Form</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 120vh;
+                margin: 0;
+                background-color: #09C141;
+            }
+
+            form {
+                width: 500px;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px
+                    rgba(0, 0, 0, 0.1);
+            }
+
+            fieldset {
+                border: 1px solid black;
+                padding: 10px;
+                margin: 0;
+            }
+
+            legend {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            input[type="checkbox"],
+            select,
+            textarea,
+            input[type="radio"] {
+                margin-left: 20px;
+            }
+
+            input[type="submit"] {
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>            
+            <fieldset>
+                <legend>
+                    User personal information
+                </legend>
+                <label>Name</label>
+                <input type="text" name="name" />
+                <label>Email</label>
+                <input type="email" name="email" />
+                <label>Age</label>
+                <input type="number" name="Age" id="Age">
+                <br>
+                <label for="Profesion">Which option describe best you?</label>
+                    <select name="profesion" id="profesion">
+                        <option value="student">Student</option>
+                        <option value="University">University</option>
+                        <option value="office">Officer</option>
+                        <option value="worker">Worker</option>
+                    </select>
+                <br>
+
+                <label>Would you recommend GeeksforGeeks to a friend?</label>
+                <input
+                    type="radio"
+                    name="Recommend"
+                    value="Yes"
+                />Yes
+                <br>
+                <input
+                    type="radio"
+                    name="Recommend"
+                    value="No"
+                />No
+                <br>
+                <input
+                    type="radio"
+                    name="Recommend"
+                    value="Maybe"
+                />Maybe
+
+                <label>Languages and Frameworks you Know? (Check all apply)</label>
+                        <input type="checkbox" name="subject" id="C">C<br>
+                        <input type="checkbox" name="subject" id="C++">C++<br>
+                        <input type="checkbox" name="subject" id="C#">C#<br>
+                        <input type="checkbox" name="subject" id="Java">Java<br>
+                        <input type="checkbox" name="subject" id="Python">Python<br>
+                        <input type="checkbox" name="subject" id="JavaScript">JavaScript<br>
+                        <input type="checkbox" name="subject" id="React">React<br>
+                        <input type="checkbox" name="subject" id="Angular">Angular<br>
+                        <input type="checkbox" name="subject" id="Django">Django<br>
+                        <input type="checkbox" name="subject" id="Spring">Spring<br>
+
+                <label>Any comments or sugestions:</label>
+                <textarea rows="5" cols="50"
+                    name="comments"
+                ></textarea>
+                <br>
+                <input
+                    type="submit"
+                    value="submit"
+                />
+            </fieldset>
+        </form>
+    </body>
+</html>
