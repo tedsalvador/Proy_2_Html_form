@@ -2,13 +2,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 120vh;
+                height: 160vh;
                 margin: 0;
                 background-color: #09C141;
             }
 
             form {
-                width: 500px;
+                width: 500px;                
                 background-color: #fff;
                 padding: 20px;
                 border-radius: 8px;
